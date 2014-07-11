@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ServeMeApp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        
+        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">Earnings</a></li>
+                    <li><a href="journal.html">Archive</a></li>
+                </ul>
+                <h3 class="text-muted">ServeMe</h3>
+            </div>
+            <div class="bodyContainer">
+                <div class="row">
+                    <div>
+                        <div class="content journalEntries">
+                        <h1>Previous Entries</h1>
+                        <section class="scoreContent">
+                            <!-- Earnings Content -->
+                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <footer>
+                <div class="footer">
+                <ul class="nav nav-pills pull-right">
+                        <li><a href="index.html">Earnings</a></li>
+                        <li><a href="journal.html">Archive</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     <h4 class="modal-title" id="myModalLabel">New Journal Entry</h4>
+                </div>
+                <form id="newEntryForm" action="">
+                <div class="modal-body">
+        
+                    <div class="form-group">
+                        <label for="newEntryTitle">Title of Entry</label> 
+                        <input type="text" class="form-control newEntryTitle" id="newEntryTitle" placeholder="Title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="entryContentForm">Entry</label>
+                        <textarea id="entrytContentForm" class="form-control entryContentForm"></textarea>
+                    </div>
+        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary saveEntry">Save changes</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/templates.js"></script>
+        <script src="scripts/constructors.js"></script>
+        <script src="scripts/main.js"></script>
+        
+        
+
+
+
+        <!-- endbuild -->
+</body>
+</html>

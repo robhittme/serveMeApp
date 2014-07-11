@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ServeMeApp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        
+        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">Earnings</a></li>
+                    <li><a href="journal.html">Archive</a></li>
+                </ul>
+                <h3 class="text-muted">ServeMe</h3>
+            </div>
+            <div class="bodyContainer">
+                <div class="formContainer">
+                    <!-- might what to put date here for easy of the server -->
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="control-label" >Date</label>
+                        <input type="text" class="form-control currentDate">
+                      </div>
+                    </form> 
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="control-label" >Goal of the Month:</label>
+                        <input type="text" class="form-control monthGoal">
+                      </div>
+                    </form>  
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="control-label" >Goal of the Day:</label>
+                        <input type="text" class="form-control dayGoal">
+                      </div>
+                    </form>
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="control-label" >Tips:</label>
+                        <input type="text" class="form-control tips">
+                      </div>
+                    </form>       
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="control-label" >Hours:</label>
+                        <input type="text" class="form-control hours">
+                      </div>
+                    </form> 
+                    <p><br><a class="btn btn-lg btn-info calculate">Calculate!</a></p>
+                </div>
+               <div class="rewardContainer">
+                    <p>Medal Requirements</p>
+                    <!-- percentages of what is needed for the medals -->
+                   <p class="medalPercentages bronze">%</p>
+                   <p class="medalPercentages silver">%</p>
+                   <p class="medalPercentages gold">%</p>
+               </div> 
+
+               <div class="scoreContainer totalScore">
+                    <h1>Score</h1> 
+                    <ul class="totalScore">
+                        <!-- hourly, medal, and remainder goes here once calucate button event is executed -->
+                    </ul>
+               </div>   
+            </div>
+            
+        
+            <footer>
+                <div class="footer">
+                <ul class="nav nav-pills pull-right">
+                        <li><a href="index.html">Earnings</a></li>
+                        <li><a href="journal.html">Archive</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/constructors.js"></script>
+        <script src="scripts/templates.js"></script>
+
+
+
+        <!-- endbuild -->
+</body>
+</html>
